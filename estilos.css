@@ -1,0 +1,34 @@
+a:hover{
+    background-color: rgb(219, 207, 207);
+}
+p{
+    font-family: lato;
+}
+#carouselExampleControls{
+    display: flex;
+    margin: auto;
+    padding: 25px;
+    max-width: 60%;
+    max-height: 60%;
+}
+@media screen and (max-width: 990px){
+    #carouselExampleControls{
+        max-width: 90%;
+        max-height: 90%;
+    }   
+}
+.body-contacto{
+    background-color: rgb(212, 205, 205);
+    font-family: lato;
+}
+.background-formulario{
+    width: 96%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.celdas-info{
+    min-width: 300px;
+}
+#text-area{
+    width: 96%;
+}
