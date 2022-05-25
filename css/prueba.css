@@ -6,6 +6,21 @@
   min-width: 70%;
   max-height: 75%; }
 
+.background-formulario {
+  display: flex;
+  margin: auto;
+  max-width: 90%;
+  min-width: 80%;
+  max-height: 75%; }
+
+.cuerpo-formulario {
+  padding: 5%;
+  width: 85%;
+  font-family: 'Lato', sans-serif; }
+
+.imagen-contacto :hover {
+  filter: sepia(40%); }
+
 nav div a img {
   width: 60px; }
 
@@ -31,3 +46,7 @@ nav div a img {
 
 .main-principal {
   background-color: #dbcece; }
+
+* {
+  margin: 0;
+  padding: 0; }
