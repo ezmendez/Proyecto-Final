@@ -4,8 +4,16 @@
 @import "../scss/variables/variables";
 @import "../scss/partials/menu";
 @import "../scss/partials/main";
+@import "../scss/partials/kids";
+@import "../scss/partials/men";
 
 *{
     margin: 0;
     padding: 0;
+}
+h1{
+    text-transform: uppercase;
+}
+h2{
+    text-transform: uppercase;
 }

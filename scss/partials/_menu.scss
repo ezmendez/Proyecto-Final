@@ -4,10 +4,6 @@ nav div a img{
     width: 60px;
     
 }
-.logo-menu{
-    display: flex;
-    justify-content: center;
-}
 .menu-principal{
     ul :hover{
         background-color: $color-principal;
@@ -22,6 +18,7 @@ nav div a img{
         text-transform:capitalize;
     }
 }
+// esto lo realice para que al reducir la pantalla el logo quede mas grande porque en el responsive, se iba achicando por utilizar un width con %
 @media screen and (max-width: 991px){
     nav div a img{
         width: 100px;
@@ -29,4 +26,3 @@ nav div a img{
         margin: auto;
     }
 }
-// siento que el logo no termina quedando al medio, creo es un error utilizar flexbox ahi no?
