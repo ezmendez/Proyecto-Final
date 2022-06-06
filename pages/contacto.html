@@ -12,105 +12,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/prueba.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Bad Panther/Contacto</title>
 </head>
-<body class="body-contacto">
   <body>
     <header>
       <div class="menu-principal">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <div class="logo-menu">
-                  <img src="../img/bad panther.svg" alt="logo principal" href="../index.html">
-                </div>
-              </a>  
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./hombre.html">./Man</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./mujer.html">Woman</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./kids.html">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <div class="panel">
-                  <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Escriba aqui" aria-label="Search">
-                      <button class="boton-busqueda"><span>Buscar</span></button>
-                  </form>
-                </div>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand">
+              <div class="logo-menu">
+                <img src="../img/bad panther.svg" alt="logo principal" href="../index.html">
               </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li>
+                  <a aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                  <a href="hombre.html">Man</a>
+                </li>
+                <li>
+                  <a href="mujer.html">Women</a>
+                </li>
+                <li>
+                  <a href="kids.html">Kids</a>
+                </li>
+                <li>
+                  <a href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <div class="panel">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Escriba aqui" aria-label="Search">
+                  <button class="boton-busqueda"><span>Buscar</span></button>
+                </form>
+              </div> 
             </div>
-          </nav>
-      </div>  
+          </div>
+        </nav>
+      </div>     
     </header>
     <main class="cuerpo-formulario">
-      <div class="imagen-contacto">
+      <div class="imagen-contacto img-size">
         <img src="../img/background.jpg" alt="Queremos saber mas de vos!" class="background-formulario">  
       </div>
+      <div class="titular-contacto">
+        <h1>Entremos en contacto!</h1>
+      </div> 
       <form action="">
-          <fieldset>
-            <legend>Formulario de contacto</legend>
-            <div class="celdas-info">                
-              <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="escriba aqui su nombre y apellido">
-              <label for="Apellido" class="form-label">E-mail</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="E-mail" placeholder="escriba aqui correo electrónico">
-              <select name="talles" id="">
-                <option value="Seleccionar">Articulo de interés</option>
-                <option value="L">Remeras</option>
-                <option value="XL">Pantalones</option>
-                <option value="XXL">Camperas</option>
-              </select>
-            </div>  
+        <fieldset>
+          <div class="celdas-info">                
+            <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre" placeholder="escriba aqui su nombre y apellido">
+            <label for="Apellido" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="E-mail" placeholder="escriba aqui correo electrónico">
+            <select name="talles" class="lista-form">
+              <option value="Seleccionar">Articulo de interés</option>
+              <option value="L">Remeras</option>
+              <option value="XL">Pantalones</option>
+               <option value="XXL">Camperas</option>
+            </select>
+          </div>  
+          <div class="cuerpo-formulario2">
             <div>Nos gustaría saber tu opinión</div>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escriba aqui su opinión"></textarea>
             <div>
               ¿Acepta términos y condiciones?
               <input type="checkbox" name="Check">
             </div>
-            <input type="submit" value="Enviar formulario">
-            <input type="reset" value="Limpiar formulario">
-          </fieldset>
-    </form>
+            <div class="btn-form">
+              <div class="btn-group btn-wmn">
+                <button type="button" value="Enviar" class="btn btn-outline-warning"><a href="#">Enviar</a></button>
+                <button type="button" value="Limpiar" class="btn btn-outline-warning"><a href="#">Limpiar</a></button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </main>    
     <div class="b-example-divider"></div>
-    <div class="container">  
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="../img/twitter.svg" alt="twitter"></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="../img/instagram.svg" alt="instagram"></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="../img/facebook.svg" alt="facebook"></svg></a></li>
-        </ul>
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <span class="text-muted">&copy; Mdz Company, Desarrollo Web</span>
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn btn-outline-warning btn-floating m-1" href="#" role="button"><i class="fab fa-facebook-f icon"></i></a>
+          <a class="btn btn btn-outline-warning btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter icon"></i></a>
+          <a class="btn btn btn-outline-warning btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram icon"></i></a>
+        </section>
+      </div>
+      <div class="text-center p-3 textoft" style="background-color: rgba(0, 0, 0, 0.2);"> 
+        Be strong, be a Bad Panther
+        <div class="icono-footer">
+          <img src="../img/bad panther.svg" alt="logo principal" href="#">
         </div>
-      </footer>
-    </div>
+      </div>
+      <div class="text-center p-3 pie-footer" style="background-color: rgba(0, 0, 0, 0.2);"> 
+        Sigamos en contacto!
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>   

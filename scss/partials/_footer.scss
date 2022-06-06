@@ -1,32 +1,25 @@
 @import "../variables/variables";
 
+.btn{
+    border: none;
+    
+}
+.btn :hover{ 
+    scale: (10.5);
+}
+.textoft{
+    font-style: italic;
+    color: $color-secundario;
+}
+.icono-footer{
+    img{
+        width: 80px;
+        margin-top: 15px;
+
+    }
+}
 @media screen and (max-width: 991px){
-    .container{
-        display: flex;
-        flex-direction: column;  
-     footer img{
-         width: 28px;
-         height: 28px;
-     }   
+    .pie-footer{
+        font-size: 0;
     }
-}
-@media screen and (max-width: 515px){
-    footer{
-        align-items: center;
-        margin: auto;
-        img{
-            width: 36px;
-            height: 36px;
-        }; 
-        span{
-            text-align: center;
-            margin: auto;
-        }
-    }
-}
-div footer ul{
-    margin: auto;
-}
-.col-md-4{
-    margin: auto;
 }

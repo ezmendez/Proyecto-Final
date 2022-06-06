@@ -6,6 +6,7 @@
 @import "../scss/partials/main";
 @import "../scss/partials/kids";
 @import "../scss/partials/men";
+@import "../scss/partials/women";
 
 *{
     margin: 0;
@@ -13,7 +14,59 @@
 }
 h1{
     text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
 }
 h2{
     text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: $color-secundario;
+    font-size: xx-large;
 }
+    
+    .body-contacto{
+        background-color: rgb(21, 4, 68);
+        height: 750px;
+        font: 14em/1 Montserrat;
+        margin-bottom: 15px;
+    }
+    
+    .text--line {
+        font-size: .5em;
+        }
+      
+      svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+      
+      $max: 5;
+      $stroke-step: 7%; 
+      .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
+        stroke-width: 3px;
+        
+        animation: stroke-offset 9s infinite linear;
+        
+        @for $item from 1 through $max {
+          $stroke-color: nth($colors, $item);
+          
+          &:nth-child(#{$item}) {
+            stroke: $stroke-color;
+            stroke-dashoffset: $stroke-step * $item;
+            }
+          }
+        }
+      
+      @keyframes stroke-offset {
+        50% {
+          stroke-dashoffset: $stroke-step * $max;  
+          stroke-dasharray: 0 $stroke-step * $max*2.5;
+        }
+      }
+      

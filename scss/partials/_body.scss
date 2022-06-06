@@ -2,14 +2,12 @@
 
 
 #carouselExampleControls{
-    display: flex;
-    margin: auto;
-    padding: 25px;
-    max-width: 80%;
-    min-width: 70%;
-    max-height: 75%;
+    width: 60%;
+    margin: auto;    
 }
-
-@media screen and (max-width: 515px){
-    margin: auto;
-    } 
+@media screen and (max-width: 991px){
+    #carouselExampleControls{
+        width: 80%;
+        margin: auto;    
+    }
+}

@@ -7,9 +7,70 @@
     min-width: 80%;
     max-height: 75%;
 }
+
 .cuerpo-formulario{
     
     font-family: 'Lato', sans-serif;
+        .celdas-info{
+           width: 60%;
+            margin: auto;
+        label{
+            margin-top: 10px;
+            margin-bottom: 10px;            
+        }
+    }    
+}
+.lista-form{
+    margin-top: 15px;
     
 }
+.cuerpo-formulario2{
+    div{
+        margin: auto;
+        margin-top: 15px;
+        text-align: center;
+        width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+        color: $color-secundario;
+    }
+    textarea{
+        margin: auto;
+        margin-top: 15px;
+        text-align: center;
+        width: 60%; 
+    }
+    .btn-form{
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+    
+}
+.titular-contacto{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    color: $color-secundario;
+}
 .imagen-contacto :hover {filter: sepia(40%);}
+@media screen and (max-width: 991px){
+    
+    .cuerpo-formulario{
+        .celdas-info{
+            width: 80%;
+            margin: 0;
+            margin-left: 30px;
+        }
+    }
+    form fieldset legend{
+        margin-left: 30px;
+    }
+    .cuerpo-formulario2{
+        textarea{
+            width: 90%;
+            margin: 0;
+            
+        }
+    }    
+}   
+

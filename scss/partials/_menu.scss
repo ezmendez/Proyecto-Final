@@ -4,10 +4,17 @@ nav div a img{
     width: 60px;
     
 }
+
 .menu-principal{
-    ul :hover{
-        background-color: $color-principal;
+    a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
     }
+    ul li :hover{
+       color: $color-palt;
+       text-transform: uppercase;
+     }
 }
 .panel{
     button{

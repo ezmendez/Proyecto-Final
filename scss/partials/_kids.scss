@@ -1,13 +1,12 @@
 @import "../variables/variables";
 
-.text-center{
-    img :hover {filter: sepia(40%);}
+.img-size{
+    width: 70%;
+    margin: auto;
 }
-@media screen and (min-width: 1020px){
-    main{
-        margin: auto;
-        width: 70%;
-        color: black;
+@media screen and (max-width: 991px){
+    .img-size{
+    width: 100%;
     }
-    
+
 }

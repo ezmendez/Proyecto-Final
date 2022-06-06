@@ -1,20 +1,26 @@
 @import "../variables/variables";
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .imagen-contacto{
     img{
         width: 85%;
     }
 }
 .pantera{
-    width: 70%;
     margin: auto;
+    width: 70%;
 }
 .col-lg-6{
     margin-top: 15px;
     width: 90%;
 }
+// en el index no pude quitar el color azul que toman los <a> a referirse a enlaces del mismo proyecto
 .btn-group{
-    a{
+    button{
         text-decoration: none;
+        a{
+            text-decoration: none;
+            color: rgb(167, 240, 221);
+        }
     }
 }
 
@@ -23,4 +29,8 @@
 .efecto-pages-men{
     overflow: hidden;
 }
-
+.btn-man{
+    a{
+        color: $color-secundario;
+    }
+}
