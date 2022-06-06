@@ -52,7 +52,27 @@
     text-align: center;
     color: $color-secundario;
 }
-.imagen-contacto :hover {filter: sepia(40%);}
+.btn-ctct{
+    margin: auto;
+    padding-right: 30px;
+}
+.imagen-contacto :hover {filter: sepia(40%);
+}
+// el mixing y el extend no lo termine utilizando
+%btn {
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 2px;
+    color: #FFFFFF;
+  }
+  
+  .btn_success {
+    @extend %btn;
+    background-color: #108EFF;
+  }
+
 @media screen and (max-width: 991px){
     
     .cuerpo-formulario{
@@ -67,10 +87,11 @@
     }
     .cuerpo-formulario2{
         textarea{
-            width: 90%;
+            width: 80%;
             margin: 0;
-            
+            margin-left: 30px;
         }
     }    
-}   
+}
+
 
